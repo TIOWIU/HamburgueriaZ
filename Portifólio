@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerImg"
+        android:layout_width="373dp"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Lista de checkboxes para os adicionais do hambúrguer -->
+
+        <!-- Layout horizontal para seleção de quantidade -->
+
+        <ImageView
+            android:id="@+id/imgFood"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hamburguer"
+            android:contentDescription="@string/todo" />
+
+        <!-- Botão para subtrair quantidade -->
+
+        <!-- Exibição da quantidade escolhida -->
+
+        <!-- Botão para adicionar quantidade -->
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Exibição do preço total -->
+
+    <TextView
+        android:id="@+id/PrecoTotalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/pre_o_total_r_0_00"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="616dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/EnviarPedidoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar_pedido"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="658dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/AdicionarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Mais"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <Button
+        android:id="@+id/SubtrairButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Menos"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <CheckBox
+        android:id="@+id/TomateCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tomate"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="476dp" />
+
+    <CheckBox
+        android:id="@+id/AlfaceCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alface"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="428dp" />
+
+    <CheckBox
+        android:id="@+id/BaconCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bacon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <CheckBox
+        android:id="@+id/QueijoCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/queijo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <TextView
+        android:id="@+id/QuantidadeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/_0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="570dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="Text"
+        android:ems="100"
+        android:inputType="text"
+        android:text="@string/nome"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quantidade"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="524dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HamburgueriaZ"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <!-- Botão para enviar o pedido -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
